@@ -87,4 +87,9 @@ final class Simple implements PriceTypeInterface, ItemPriceTypeInterface {
         return false;
     }
 
+    public static function allowMultiple()
+    {
+        return false;
+    }
+
 }
