@@ -4,9 +4,9 @@ namespace modmore\Commerce\SimplePriceType\PriceType;
 
 use modmore\Commerce\Pricing\Exceptions\InvalidPriceTypeDataException;
 use modmore\Commerce\Pricing\Interfaces\PriceInterface;
+use modmore\Commerce\Pricing\Price;
 use modmore\Commerce\Pricing\PriceType\Interfaces\ItemPriceTypeInterface;
 use modmore\Commerce\Pricing\PriceType\Interfaces\PriceTypeInterface;
-use modmore\Commerce\Pricing\Price;
 
 final class Simple implements PriceTypeInterface, ItemPriceTypeInterface {
 
@@ -92,4 +92,10 @@ final class Simple implements PriceTypeInterface, ItemPriceTypeInterface {
         return false;
     }
 
+    public function __debugInfo()
+    {
+        return [
+            'price' => $this->price,
+        ];
+    }
 }
