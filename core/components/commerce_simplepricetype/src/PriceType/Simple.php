@@ -72,7 +72,7 @@ final class Simple implements PriceTypeInterface, ItemPriceTypeInterface {
         return 'commerce_simplepricetype.simple';
     }
 
-    public static function getFields()
+    public static function getFields(\Commerce $commerce)
     {
         return [
             [
