@@ -3,7 +3,7 @@ namespace modmore\Commerce\SimplePriceType\Modules;
 use modmore\Commerce\Events\Admin\PriceTypes;
 use modmore\Commerce\Modules\BaseModule;
 use modmore\Commerce\SimplePriceType\PriceType\Simple;
-use Symfony\Component\EventDispatcher\EventDispatcher;
+use modmore\Commerce\Dispatcher\EventDispatcher;
 
 require_once dirname(dirname(__DIR__)) . '/vendor/autoload.php';
 

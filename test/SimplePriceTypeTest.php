@@ -9,7 +9,7 @@ use modmore\Commerce\Pricing\Pricing;
 use modmore\Commerce\Pricing\ProductPricing;
 use modmore\Commerce\SimplePriceType\Modules\SimplePriceType;
 use modmore\Commerce\SimplePriceType\PriceType\Simple;
-use Symfony\Component\EventDispatcher\EventDispatcher;
+use modmore\Commerce\Dispatcher\EventDispatcher;
 
 class SimplePriceTypeTest extends \PHPUnit_Framework_TestCase
 {
